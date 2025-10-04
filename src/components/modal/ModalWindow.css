@@ -1,0 +1,44 @@
+#seguranca-modal {
+    position: fixed;
+    overflow-y: auto;
+    scrollbar-width: none;
+    bottom: 0;
+
+    height: 86vh;
+
+    background-color: var(--background-color);
+}
+
+#modal-close {
+    position: fixed;
+    z-index: 99;
+    bottom: 0%;
+    right: 25%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#modal-close > svg {
+    fill: var(--fill-button);
+}
+
+@media screen and (min-width: 1200px){
+  #seguranca-modal {
+    margin: 0 25%;
+    padding: 0 .5rem 2rem .5rem;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  #seguranca-modal {
+    width: 95%;
+    height: 78vh;
+    padding-bottom: 4rem;
+    margin-right: 1rem;
+  }
+
+  #modal-close {
+    right: 5%;
+  }
+}

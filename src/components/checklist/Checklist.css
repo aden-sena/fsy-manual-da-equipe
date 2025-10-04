@@ -1,0 +1,17 @@
+.checklist {
+    list-style-type: none;
+    padding-left: 20px;
+}
+.checklist > li {
+    position: relative;
+    padding-left: 20px;
+}
+.checklist > li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid;
+}

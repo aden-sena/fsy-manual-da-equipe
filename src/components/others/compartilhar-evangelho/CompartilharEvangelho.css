@@ -1,0 +1,12 @@
+#cronograma-compartilhar-evangelho {
+    border: 1px solid;
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+}
+
+#cronograma-compartilhar-evangelho > thead > tr > th,
+#cronograma-compartilhar-evangelho > tbody > tr > td    {
+    border: 1px solid;
+    padding: .5rem;
+}

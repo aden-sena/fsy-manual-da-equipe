@@ -1,0 +1,14 @@
+img {
+    width: 100%;
+}
+
+.table, .table > tbody, .table > thead > tr > th, .table > tbody > tr > td{
+    border: 1px solid;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    padding: .5rem;
+}
+.table > thead > tr > th {
+    text-align: center;
+}

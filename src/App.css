@@ -1,0 +1,69 @@
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+}
+
+#app-container {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+#content {
+  position: fixed;
+  overflow-y: auto;
+  scrollbar-width: none;
+  bottom: 0;
+
+  height: 86vh;
+
+  scroll-behavior: smooth;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h3 {
+  color: #fff;
+  background-color: #086a8d;
+  
+  padding: .2rem;
+  text-align: left;
+}
+
+h4 {
+  margin-bottom: -10px;
+}
+
+.citacao {
+  font-style: italic;
+}
+
+a {
+  text-decoration: none;
+  font-style: italic;
+  color: var(--a-color);
+
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1200px){
+  #content {
+    margin: 0 25%;
+    padding: 0 .5rem 2rem .5rem;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  #content {
+    width: 94%;
+    height: 78vh;
+
+    margin: 0 3% 0 3%;
+    padding-bottom: 4rem;
+  }
+}

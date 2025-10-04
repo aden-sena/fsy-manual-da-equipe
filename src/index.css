@@ -1,0 +1,28 @@
+:root {
+  /* variáveis que controla o tema da página */
+  --color-scheme: light dark;
+  --color: rgba(255, 255, 255, 0.87);
+  --background-color: #242424;
+  /* variável que controla a cor do botão de trocar o tema da página */
+  --theme-button-background: gray;
+  /* variável que controla a cor dos links */
+  --a-color: #49cce6;
+  /* variáveis que controlam a cor dos icones dos botões */
+  --fill-button: #e3e3e3;
+  --fill-scroll-top-button: lightgray;
+  /* variável que controla a cor da rota ativa */
+  --route-active-background: gray;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: var(--color-scheme);
+  color: var(--color);
+  background-color: var(--background-color);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

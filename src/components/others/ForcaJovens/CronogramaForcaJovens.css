@@ -1,0 +1,12 @@
+#cronograma-forca-jovens {
+    border: 1px solid;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+#cronograma-forca-jovens > thead > tr > th,
+#cronograma-forca-jovens > tbody > tr > td{
+    border: 1px solid;
+    padding: .5rem;
+}

@@ -1,0 +1,17 @@
+.schedule {
+    width: 100%;
+
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    text-align: left;
+}
+.schedule > tbody > tr > td, .schedule > tbody > tr > th{
+    border-top: 1px solid;
+    padding: .5rem;
+}
+.schedule > tbody > tr > td {
+    padding-left: 4.5rem;
+}

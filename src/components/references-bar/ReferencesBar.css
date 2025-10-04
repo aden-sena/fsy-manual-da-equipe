@@ -1,0 +1,58 @@
+#references-bar {
+    position: fixed;
+    top: 0;
+    margin-top: 55px;
+
+    z-index: 99;
+    height: 94.2vh;
+
+    border-left: 1px solid gray;
+    background-color: var(--background-color);
+}
+
+.reference-bar {
+    right: -100%;
+    transition: right 0.5s ease;
+}
+
+.reference-bar.open {
+    right: 0;
+}
+
+#close-icon-ref {
+    position: absolute;
+    right: 0;
+    margin-top: .5rem;
+    margin-right: 1.5rem;
+    cursor: pointer;
+    fill: var(--fill-button);
+}
+
+#titulo {
+    margin-top: 3rem;
+
+    text-align: center;
+    font-weight: bold;
+}
+
+#titulo, #references-content {
+    padding: 0 1rem;
+}
+
+@media screen and (min-width: 600px){
+    #references-bar {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1100px){
+    #references-bar {
+        width: 24.5%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #references-bar {
+        width: 75%;
+    }
+}
