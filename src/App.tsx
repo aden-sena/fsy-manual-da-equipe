@@ -11,16 +11,28 @@ import Dia1 from './pages/dia1/Dia1.tsx'
 import ReferencesBar from './components/references-bar/ReferencesBar.tsx'
 import ScrollTopButton from './components/scroll-top-button/ScrollTopButton.tsx'
 import Dia2 from './pages/dia2/Dia2.tsx'
-import SummaryBar from './components/summary-bar/SummaryBar.tsx'
+import SummaryBar, { closeSummaryBar } from './components/summary-bar/SummaryBar.tsx'
 
 function App() {
+  function closeSummaryPhone() {
+    const content = document.getElementById('content')
+    const referencesBar = document.getElementById('references-bar')
+    const mediaQuery = window.matchMedia('(max-width: 1100px)')
+
+    if(mediaQuery.matches) {
+      { content && content.addEventListener('click', closeSummaryBar) }
+      { referencesBar && referencesBar.addEventListener('click', closeSummaryBar) }
+    }
+    
+  }
+
   return (
     <div id="app-container">
       <TitleBar />
 
       <ReferencesBar />
       
-      <div id="content">
+      <div id="content" onClick={closeSummaryPhone}>
         <BrowserRouter basename="/fsy-manual-da-equipe">
           <SummaryBar />
           <Routes>

@@ -7,7 +7,7 @@ export function openSummaryBar() {
     { summaryBar && summaryBar.classList.add('open') }
 }
 
-function closeSummaryBar() {
+export function closeSummaryBar() {
     const summaryBar = document.querySelector('.summary-bar')
     { summaryBar && summaryBar.classList.remove('open') }
 }
