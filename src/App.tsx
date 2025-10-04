@@ -16,12 +16,10 @@ import SummaryBar, { closeSummaryBar } from './components/summary-bar/SummaryBar
 function App() {
   function closeSummaryPhone() {
     const content = document.getElementById('content')
-    const referencesBar = document.getElementById('references-bar')
     const mediaQuery = window.matchMedia('(max-width: 1100px)')
 
     if(mediaQuery.matches) {
       { content && content.addEventListener('click', closeSummaryBar) }
-      { referencesBar && referencesBar.addEventListener('click', closeSummaryBar) }
     }
     
   }
