@@ -29,6 +29,7 @@ function Dia2() {
                 horario="7h–8h,7h45-8h,8h–8h15,8h15–9h15,9h30–10h30,10h40–11h30,11h45–12h30,13h–14h30,14h30–15h30,15h40–16h40,16h50–17h50,18h–18h50,19h–20h30,20h45–21h15,21h20–22h,22h10,22h20-22h50,23h"
                 atividade='Acordar e se preparar para o dia,Reunião de coordenadores assistentes/consultores,Devocional matutino dos participantes,Desjejum,Reunião Sacramental,Vem e Segue-me (Escola Dominical),Tempo disponibilizado para o Family Search,Almoço | Ensaio do programa musical,Atividade Compartilhar o Evangelho,Tempo Livre,Atividade “Força dos Jovens”,Devocional com o Setenta/Presidente de Estaca,Jantar,Refletir e analisar,Contagem dos participantes | Hora do silêncio | higiene e estudo pessoal,Apagar as luzes,Reunião de coordenadores/coordenadores assistentes,Staff deve se recolher'
                 idComponent="#,reuniao-cca,devocional-matutino,desjejum,reuniao-sacramental,vem-e-segue-me,family-search,almoco,compartilhar-evangelho,tempo-livre,forca-jovens,devocional-setenta-presidente,jantar,refletir-analisar,contagem-noturna,apagar-luzes,reuniao-noturna-cca,#"
+                namePage="dia2"
             />
 
             <ReuniaoCAC />

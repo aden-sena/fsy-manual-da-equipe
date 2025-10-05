@@ -1,12 +1,14 @@
 import "./Schedule.css"
+import { HashLink } from "react-router-hash-link"
 
 type ScheduleProps = {
     horario: string;
     atividade: string;
     idComponent: string;
+    namePage: string;
 }
 
-function Schedule({horario, atividade, idComponent}: ScheduleProps) {
+function Schedule({horario, atividade, idComponent, namePage}: ScheduleProps) {
     let horas: Array<String> = horario.split(',')
     let atividades: Array<String> = atividade.split(',')
     let id: Array<String> = idComponent.split(',')
@@ -18,7 +20,7 @@ function Schedule({horario, atividade, idComponent}: ScheduleProps) {
                 {horas.map((hora, index) => (
                     <tr key={index}>
                         <th>{hora}</th>
-                        {id[index] === "#" ? <td>{atividades[index]}</td> : <td><a href={`#${id[index]}`}>{atividades[index]}</a></td>}
+                        {id[index] === "#" ? <td>{atividades[index]}</td> : <td><HashLink to={`/${namePage}#${id[index]}`}>{atividades[index]}</HashLink></td>}
                     </tr>
                 ))}
                 </tbody>
