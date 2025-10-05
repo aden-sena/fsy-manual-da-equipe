@@ -12,6 +12,7 @@ import ReferencesBar, { closeRefBar } from './components/references-bar/Referenc
 import ScrollTopButton from './components/scroll-top-button/ScrollTopButton.tsx'
 import Dia2 from './pages/dia2/Dia2.tsx'
 import SummaryBar, { closeSummaryBar } from './components/summary-bar/SummaryBar.tsx'
+import { useSwipeable } from 'react-swipeable'
 
 function App() {
   let isRefOpen = true
@@ -34,8 +35,18 @@ function App() {
     }
   }
 
+  const handleSwipe = useSwipeable({
+      onSwipedLeft: () => {
+        closeSummaryBar()
+      },
+      onSwipedRight: () => {
+        closeRefBar()
+        isRefOpen = true
+      }
+    })
+
   return (
-    <div id="app-container">
+    <div {...handleSwipe} id="app-container">
       <TitleBar />
 
       <ReferencesBar />
