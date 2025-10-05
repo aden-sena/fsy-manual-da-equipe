@@ -9,7 +9,7 @@
 }
 
 #scroll-top-button > svg {
-    fill: var(--fill-scroll-top-button);
+    fill: var(--fill-button);
 }
 
 @media screen and (max-width: 1200px) {

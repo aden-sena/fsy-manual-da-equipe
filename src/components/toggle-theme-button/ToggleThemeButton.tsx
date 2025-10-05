@@ -22,7 +22,6 @@ function ToggleThemeButton() {
             des.setProperty("--a-color", "#49cce6")
             //cor do icone dos botões
             des.setProperty("--fill-button", "#e3e3e3")
-            des.setProperty("--fill-scroll-top-button", "lightgray")
             //cor de fundo da rota ativa
             des.setProperty("--route-active-background", "gray")
         }else{
@@ -38,7 +37,6 @@ function ToggleThemeButton() {
             des.setProperty("--a-color", "#0680a7")
             //cor do icone dos botões
             des.setProperty("--fill-button", "#1f1f1f")
-            des.setProperty("--fill-scroll-top-button", "#1f1f1f")
             //cor de fundo da rota ativa
             des.setProperty("--route-active-background", "lightgray")
         }
