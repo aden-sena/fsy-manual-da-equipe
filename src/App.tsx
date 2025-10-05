@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import Home from './pages/home/Home.tsx'
 import TitleBar from './components/title-bar/TitleBar.tsx'
@@ -18,6 +18,7 @@ function App() {
     
   function closeBarsPhone() {
     const referencesBar = document.querySelector('.reference-bar')
+    const closeRefButton = document.getElementById('close-icon-ref')
     const mediaQuery = window.matchMedia('(max-width: 1200px)')
 
     if(mediaQuery.matches) {
@@ -29,6 +30,7 @@ function App() {
         closeRefBar()
         isRefOpen = true
       }
+      closeRefButton && closeRefButton.addEventListener('click', () => isRefOpen = true)
     }
   }
 
@@ -38,7 +40,7 @@ function App() {
 
       <ReferencesBar />
       
-        <BrowserRouter basename="/fsy-manual-da-equipe">
+        <HashRouter>
           <SummaryBar />
           <div id="content" onClick={closeBarsPhone}>
           <Routes>
@@ -54,7 +56,7 @@ function App() {
             <Route path="/*" element={<Home />} />
           </Routes>
           </div>
-        </BrowserRouter>
+        </HashRouter>
 
         <ScrollTopButton />
     </div>
