@@ -2,12 +2,12 @@ import "./ReferencesBar.css"
 import { dataScriptures } from "../../data/dataScriptures";
 import { dataCitacao } from "../../data/dataCitacao";
 
-function openRefBar() {
+export function openRefBar() {
     const referencesBar = document.querySelector('.reference-bar')
     { referencesBar && referencesBar.classList.add('open') }
 }
 
-function closeRefBar() {
+export function closeRefBar() {
     const referencesBar = document.querySelector('.reference-bar')
     { referencesBar && referencesBar.classList.remove('open') }
 }

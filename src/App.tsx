@@ -8,20 +8,28 @@ import Seguranca from './pages/seguranca/Seguranca.tsx'
 import PreparacaoEPlanejamento from './pages/preparacao-e-planejamento/PreparacaoEPlanejamento.tsx'
 import Instrucoes from './pages/instrucoes/Instrucoes.tsx'
 import Dia1 from './pages/dia1/Dia1.tsx'
-import ReferencesBar from './components/references-bar/ReferencesBar.tsx'
+import ReferencesBar, { closeRefBar } from './components/references-bar/ReferencesBar.tsx'
 import ScrollTopButton from './components/scroll-top-button/ScrollTopButton.tsx'
 import Dia2 from './pages/dia2/Dia2.tsx'
 import SummaryBar, { closeSummaryBar } from './components/summary-bar/SummaryBar.tsx'
 
 function App() {
-  function closeSummaryPhone() {
-    const content = document.getElementById('content')
-    const mediaQuery = window.matchMedia('(max-width: 1100px)')
+  let isRefOpen = true
+    
+  function closeBarsPhone() {
+    const referencesBar = document.querySelector('.reference-bar')
+    const mediaQuery = window.matchMedia('(max-width: 1200px)')
 
     if(mediaQuery.matches) {
-      { content && content.addEventListener('click', closeSummaryBar) }
+      closeSummaryBar()
+
+      if(referencesBar && referencesBar.classList.contains('open') && isRefOpen) {
+        isRefOpen = false
+      }else {
+        closeRefBar()
+        isRefOpen = true
+      }
     }
-    
   }
 
   return (
@@ -30,9 +38,9 @@ function App() {
 
       <ReferencesBar />
       
-      <div id="content" onClick={closeSummaryPhone}>
         <BrowserRouter basename="/fsy-manual-da-equipe">
           <SummaryBar />
+          <div id="content" onClick={closeBarsPhone}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/objetivo" element={<Objetivo />} />
@@ -45,10 +53,10 @@ function App() {
 
             <Route path="/*" element={<Home />} />
           </Routes>
+          </div>
         </BrowserRouter>
 
         <ScrollTopButton />
-      </div>
     </div>
   )
 }
