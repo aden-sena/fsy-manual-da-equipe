@@ -1,0 +1,11 @@
+#cronograma-viver-evangelho {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#cronograma-viver-evangelho > thead > tr > th,
+#cronograma-viver-evangelho > tbody > tr > td {
+    border-bottom: 1px solid;
+    padding: .5rem 5rem .5rem .5rem;
+}

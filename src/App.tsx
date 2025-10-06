@@ -1,18 +1,19 @@
-import { HashRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
-import Home from './pages/home/Home.tsx'
+import { HashRouter, Route, Routes } from 'react-router-dom'
+import { useSwipeable } from 'react-swipeable'
 import TitleBar from './components/title-bar/TitleBar.tsx'
+import ReferencesBar, { closeRefBar } from './components/references-bar/ReferencesBar.tsx'
+import SummaryBar, { closeSummaryBar } from './components/summary-bar/SummaryBar.tsx'
+import Home from './pages/home/Home.tsx'
 import Objetivo from './pages/objetivo/Objetivo.tsx'
 import Proposito from './pages/proposito/Proposito.tsx'
 import Seguranca from './pages/seguranca/Seguranca.tsx'
 import PreparacaoEPlanejamento from './pages/preparacao-e-planejamento/PreparacaoEPlanejamento.tsx'
 import Instrucoes from './pages/instrucoes/Instrucoes.tsx'
 import Dia1 from './pages/dia1/Dia1.tsx'
-import ReferencesBar, { closeRefBar } from './components/references-bar/ReferencesBar.tsx'
-import ScrollTopButton from './components/scroll-top-button/ScrollTopButton.tsx'
 import Dia2 from './pages/dia2/Dia2.tsx'
-import SummaryBar, { closeSummaryBar } from './components/summary-bar/SummaryBar.tsx'
-import { useSwipeable } from 'react-swipeable'
+import Dia3 from './pages/dia3/Dia3.tsx'
+import ScrollTopButton from './components/scroll-top-button/ScrollTopButton.tsx'
 
 function App() {
   let isRefOpen = true
@@ -63,8 +64,7 @@ function App() {
             <Route path="/instrucoes" element={<Instrucoes />} />
             <Route path="/dia1" element={<Dia1 />} />
             <Route path="/dia2" element={<Dia2 />} />
-
-            <Route path="/*" element={<Home />} />
+            <Route path="/dia3" element={<Dia3 />} />
           </Routes>
           </div>
         </HashRouter>

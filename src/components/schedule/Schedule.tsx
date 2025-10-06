@@ -9,9 +9,9 @@ type ScheduleProps = {
 }
 
 function Schedule({horario, atividade, idComponent, namePage}: ScheduleProps) {
-    let horas: Array<String> = horario.split(',')
-    let atividades: Array<String> = atividade.split(',')
-    let id: Array<String> = idComponent.split(',')
+    let horas: Array<String> = horario.split(';')
+    let atividades: Array<String> = atividade.split(';')
+    let id: Array<String> = idComponent.split(';')
 
     return(
         <>
