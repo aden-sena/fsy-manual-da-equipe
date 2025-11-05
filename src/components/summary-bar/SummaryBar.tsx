@@ -23,8 +23,10 @@ function SummaryBar() {
 
     return(
         <div id="summary-bar" className="summary-bar">
-            <svg id="close-icon-summary" onClick={closeSummaryBar} xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-            <p id="summary-title">Sumário</p>
+            <div id="summary-top">
+                <svg id="close-icon-summary" onClick={closeSummaryBar} xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                <p id="summary-title">Sumário</p>
+            </div>
             <ul>
                 <NavLink to={"/"}><li>Bem-vindo à conferência FSY</li></NavLink>
                 <NavLink to={"/objetivo"}><li>Objetivo</li></NavLink>
@@ -36,6 +38,7 @@ function SummaryBar() {
                 <NavLink to={"/dia2"}><li>Dia 2</li></NavLink>
                 <NavLink to={"/dia3"}><li>Dia 3</li></NavLink>
                 <NavLink to={"/dia4"}><li>Dia 4</li></NavLink>
+                <NavLink to={"/dia5"}><li>Dia 5</li></NavLink>
             </ul>
         </div>
     )

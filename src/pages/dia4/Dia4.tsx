@@ -73,7 +73,7 @@ function Dia4() {
 
             <h3 id="refletir-analisar">Refletir e Analisar</h3>
             <h4>Consultor</h4>
-            <p>Dirija o debate Refletir e Analisar e dê os últimos anuncios ou lembretes aos seus jovens. Lembre-os que eles devem usar a camisa do participante no dia seguinte, mas que devem trocar para roupas de domingo antes do Programa Musical.</p>
+            <p>Dirija o debate Refletir e Analisar e dê os últimos anuncios ou lembretes aos seus jovens.</p>
             <p>Orem juntos.</p>
 
             <ContagemNoturna4 />
