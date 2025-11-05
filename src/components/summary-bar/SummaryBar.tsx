@@ -35,6 +35,7 @@ function SummaryBar() {
                 <NavLink to={"/dia1"}><li>Dia 1</li></NavLink>
                 <NavLink to={"/dia2"}><li>Dia 2</li></NavLink>
                 <NavLink to={"/dia3"}><li>Dia 3</li></NavLink>
+                <NavLink to={"/dia4"}><li>Dia 4</li></NavLink>
             </ul>
         </div>
     )

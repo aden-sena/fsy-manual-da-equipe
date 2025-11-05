@@ -57,5 +57,15 @@ export const dataCitacao: {
         "id": "ForcaJovens1",
         "titulo": `<a href="https://www.churchofjesuschrist.org/study/general-conference/2022/10/12uchtdorf?lang=por" target="_blank">Dieter F. Uchtdorf, “Jesus Cristo é a força dos jovens”, Liahona, novembro de 2022, p. 9</a>`,
         "content": `Biblioteca do Evangelho`
+    },
+    {
+        "id": "AtividadeRapazesMocas1",
+        "titulo": `<a href="https://www.churchofjesuschrist.org/study/ftsoy/2025/09/14-the-family-proclamation-and-you?lang=por" target="_blank">Eric B. Murdock, "A proclamação da família e você", Força dos Jovens, setembro de 2025.</a>`,
+        "content": "Biblioteca do Evangelho"
+    },
+    {
+        "id": "AtividadeRapazesMocas2",
+        "titulo": `<a href="https://www.churchofjesuschrist.org/study/liahona/2025/09/06-by-divine-design?lang=por" target="_blank">"Por desígnio divino: Ensinamentos apostólicos sobre a família", A Liahona, setembro de 2025.</a>`,
+        "content": "Biblioteca do Evangelho"
     }
 ]

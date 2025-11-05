@@ -22,7 +22,6 @@ function Dia1() {
             <h1>1º dia</h1>
             <h2>Camiseta da equipe do FSY</h2>
 
-            <h3>Programação</h3>
             <Schedule 
                 horario="7h30–8h20;8h–8h20;8h30–9h15;9h15–10h45;11h–13h;13h15–14h;14h15–15h25;15h40–16h35;16h30–16h50;17h-17h50;18h–19h30;19h45–20h35;20h45–21h15;21h15–22h10;22h10;22h20-22h55"
                 atividade="Desjejum da equipe;Reunião de coordenadores/coordenadores assistentes;Reunião administrativa;Distribuição de materiais | Ensaio da Orientação;Check-in/Almoço;Conheça seu consultor;Conheça sua companhia + Elaborar Metas;Orientação;Tempo Livre;Brincadeiras da Noite Familiar;Jantar;Aula da Noite Familiar;Refletir e Analisar;Contagem dos participantes | Higiene pessoal | Hora do silêncio;Apagar as luzes;Reunião de coordenadores/coordenadores assistentes"

@@ -22,7 +22,6 @@ function Dia3() {
             <h1>3º dia</h1>
             <h2>Camiseta da equipe do FSY</h2>
 
-            <h3>Programação</h3>
             <Schedule 
                 horario="7h45–8h;8h–8h15;8h15–9h15;9h25–10h15;10h30–11h;11h10–12h20;12h30–13h50;14h–14h50;15h–15h50;16h–16h40;16h50–17h50;18h–19h;19h–21h;21h15-21h45;21h45-22h30;22h30;22h40–23h;23h"
                 atividade='Reunião de coordenadores assistentes/consultores;Devocional matutino dos participantes;Desjejum;Estudo do Vem, e Segue-Me;Preparação de faixas e gritos de guerra de torcidas;Manhã de jogos e grito de guerra de torcidas;Almoço | Ensaio do programa musical | Teste Para o Show de Variedades;Serão Vespertino do Casal Diretor "Educação e Autossuficiência";Atividade "Viver o Evangelho";Atividade "FSY Humano";Normas de etiqueta ao dançar | Tomar banho e se arrumar para o baile;Jantar;Baile + Lanche - 30min finais;Refletir e Analisar;Contagem dos participantes | Hora do silêncio | Preparação para o devocional e para dormir;Apagar as luzes;Reunião de coordenadores/coordenadores assistentes;Staff deve se recolher'

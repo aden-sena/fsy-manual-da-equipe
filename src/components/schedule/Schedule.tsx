@@ -15,6 +15,8 @@ function Schedule({horario, atividade, idComponent, namePage}: ScheduleProps) {
 
     return(
         <>
+            <h3>Programação</h3>
+
             <table className="schedule">
                 <tbody>
                 {horas.map((hora, index) => (

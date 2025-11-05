@@ -13,6 +13,7 @@ import Instrucoes from './pages/instrucoes/Instrucoes.tsx'
 import Dia1 from './pages/dia1/Dia1.tsx'
 import Dia2 from './pages/dia2/Dia2.tsx'
 import Dia3 from './pages/dia3/Dia3.tsx'
+import Dia4 from './pages/dia4/Dia4.tsx'
 import ScrollTopButton from './components/scroll-top-button/ScrollTopButton.tsx'
 
 function App() {
@@ -65,6 +66,7 @@ function App() {
             <Route path="/dia1" element={<Dia1 />} />
             <Route path="/dia2" element={<Dia2 />} />
             <Route path="/dia3" element={<Dia3 />} />
+            <Route path="/dia4" element={<Dia4 />} />
           </Routes>
           </div>
         </HashRouter>

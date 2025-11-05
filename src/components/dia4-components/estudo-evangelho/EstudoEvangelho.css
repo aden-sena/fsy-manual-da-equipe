@@ -1,0 +1,11 @@
+#tabela-estudo-evangelho {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#tabela-estudo-evangelho > thead > tr > th, 
+#tabela-estudo-evangelho > tbody > tr > td {
+    border-bottom: 1px solid;
+    padding: .5rem;
+}

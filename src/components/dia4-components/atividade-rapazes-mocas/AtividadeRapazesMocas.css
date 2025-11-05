@@ -1,0 +1,12 @@
+#tabela-horario-ARM {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align: center;
+}
+
+#tabela-horario-ARM > thead > tr > th, 
+#tabela-horario-ARM > tbody > tr > td {
+    border-bottom: 1px solid;
+    padding: .5rem;
+}
